@@ -1,0 +1,48 @@
+0000000000000000000000000000000000000000 0c3928ebf266ce614795284bdebeb538342a5124 Mona <mona.vonhein@web.de> 1649877815 +0200	checkout: moving from master to main
+0c3928ebf266ce614795284bdebeb538342a5124 0c3928ebf266ce614795284bdebeb538342a5124 Mona <mona.vonhein@web.de> 1650894271 +0200	discard: [a1c5512d622cc3b9eaad4f467290f6d1041e1653]
+0c3928ebf266ce614795284bdebeb538342a5124 4fddfa6b6c0f48301192929762e14de3fadb34dc Mona <mona.vonhein@web.de> 1650894275 +0200	checkout: moving from main to database
+4fddfa6b6c0f48301192929762e14de3fadb34dc 4fddfa6b6c0f48301192929762e14de3fadb34dc Mona <mona.vonhein@web.de> 1650896265 +0200	discard: [3a794b1a557c8b419f88e7c58953df24b206bfa9]
+4fddfa6b6c0f48301192929762e14de3fadb34dc eb21ce92781dcf252cdf2e0eb8d8701a8a6eb59d Mona <mona.vonhein@web.de> 1650896267 +0200	checkout: moving from database to dev
+eb21ce92781dcf252cdf2e0eb8d8701a8a6eb59d 9549c16b9856070a0a32feb90e110f6c2cece5b2 Mona <mona.vonhein@web.de> 1650897756 +0200	commit: Database basics integrated
+9549c16b9856070a0a32feb90e110f6c2cece5b2 4fddfa6b6c0f48301192929762e14de3fadb34dc Mona <mona.vonhein@web.de> 1650897761 +0200	checkout: moving from dev to database
+4fddfa6b6c0f48301192929762e14de3fadb34dc 1a1461b350d417ff02b9fded2c39dc10ca0ad5ff Mona <mona.vonhein@web.de> 1651058631 +0200	commit: Database connected to LoginPW Screen
+1a1461b350d417ff02b9fded2c39dc10ca0ad5ff 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1651666329 +0200	commit: All DB-Methods we need implemented
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1651666799 +0200	discard: [75f69b751561b63d16a58080fa71275a2012e68b]
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 9549c16b9856070a0a32feb90e110f6c2cece5b2 Mona <mona.vonhein@web.de> 1652187900 +0200	checkout: moving from database to dev
+9549c16b9856070a0a32feb90e110f6c2cece5b2 ecbeeffacf500596276a8f108631ef1496d77463 Mona <mona.vonhein@web.de> 1652188086 +0200	commit (merge): Merge remote-tracking branch 'origin/dev' into dev
+ecbeeffacf500596276a8f108631ef1496d77463 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652188093 +0200	checkout: moving from dev to database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 ecbeeffacf500596276a8f108631ef1496d77463 Mona <mona.vonhein@web.de> 1652188173 +0200	checkout: moving from database to dev
+ecbeeffacf500596276a8f108631ef1496d77463 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652188185 +0200	checkout: moving from dev to database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 ecbeeffacf500596276a8f108631ef1496d77463 Mona <mona.vonhein@web.de> 1652188202 +0200	rebase (start): checkout dev
+ecbeeffacf500596276a8f108631ef1496d77463 34f0edcb1df357e06759d5dab901a7f2fef6960a Mona <mona.vonhein@web.de> 1652188272 +0200	rebase (continue): Trying stuff with Databases
+34f0edcb1df357e06759d5dab901a7f2fef6960a 8daa5dcae7f985b8b95e99c10dadbcdceceffead Mona <mona.vonhein@web.de> 1652188560 +0200	commit: Added missing components from old repo
+8daa5dcae7f985b8b95e99c10dadbcdceceffead 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652188632 +0200	rebase (abort): updating HEAD
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652188730 +0200	checkout: moving from database to database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 ecbeeffacf500596276a8f108631ef1496d77463 Mona <mona.vonhein@web.de> 1652189168 +0200	checkout: moving from database to dev
+ecbeeffacf500596276a8f108631ef1496d77463 2a221cb68693c92dc6453d0b5349ecdf2665e841 Mona <mona.vonhein@web.de> 1652189441 +0200	reset: moving to origin/dev
+2a221cb68693c92dc6453d0b5349ecdf2665e841 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652189460 +0200	checkout: moving from dev to database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 2a221cb68693c92dc6453d0b5349ecdf2665e841 Mona <mona.vonhein@web.de> 1652189466 +0200	rebase (start): checkout dev
+2a221cb68693c92dc6453d0b5349ecdf2665e841 a650a5c4c3b2219a944983a2b2256c3dffc0389e Mona <mona.vonhein@web.de> 1652189514 +0200	rebase (continue): Trying stuff with Databases
+a650a5c4c3b2219a944983a2b2256c3dffc0389e 62bbe704220e983f9b4a1015e782c712b7df2210 Mona <mona.vonhein@web.de> 1652189752 +0200	rebase (continue): Added missing components from old repo
+62bbe704220e983f9b4a1015e782c712b7df2210 308fe2ad7b0b850fbd3a2b65ed9378074f4c78c6 Mona <mona.vonhein@web.de> 1652189855 +0200	rebase (continue): Corrected stuff so it's able to be opened on mobile again. Don't ask me what happened
+308fe2ad7b0b850fbd3a2b65ed9378074f4c78c6 bb84fd7ba84e5bffe7662a64f2f0f364f8fa77eb Mona <mona.vonhein@web.de> 1652190020 +0200	rebase (continue): Database connected to LoginPW Screen
+bb84fd7ba84e5bffe7662a64f2f0f364f8fa77eb 2183f29d846fef972818f8109331fe082dfb07ec Mona <mona.vonhein@web.de> 1652190053 +0200	rebase (continue): All DB-Methods we need implemented
+2183f29d846fef972818f8109331fe082dfb07ec 2183f29d846fef972818f8109331fe082dfb07ec Mona <mona.vonhein@web.de> 1652190055 +0200	rebase (continue) (finish): returning to refs/heads/database
+2183f29d846fef972818f8109331fe082dfb07ec 4e5e0e8dbf520fba2f71fe85cec9c012529013f4 Mona <mona.vonhein@web.de> 1652190300 +0200	commit (merge): Merge branch 'database' of https://github.com/josiela/PeriodTracker into database
+4e5e0e8dbf520fba2f71fe85cec9c012529013f4 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652191306 +0200	reset: moving to origin/database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 2a221cb68693c92dc6453d0b5349ecdf2665e841 Mona <mona.vonhein@web.de> 1652262041 +0200	checkout: moving from database to dev
+2a221cb68693c92dc6453d0b5349ecdf2665e841 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652262063 +0200	checkout: moving from dev to database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 2a221cb68693c92dc6453d0b5349ecdf2665e841 Mona <mona.vonhein@web.de> 1652262264 +0200	rebase: checkout 2a221cb68693c92dc6453d0b5349ecdf2665e841
+2a221cb68693c92dc6453d0b5349ecdf2665e841 01802fddee14fad92ee906de815d06cba2427c81 Mona <mona.vonhein@web.de> 1652262306 +0200	rebase: Trying stuff with Databases
+01802fddee14fad92ee906de815d06cba2427c81 428be9b5a50cd0cc36a1e8d6ec4a7e27bac2021a Mona <mona.vonhein@web.de> 1652262493 +0200	rebase: Added missing components from old repo
+428be9b5a50cd0cc36a1e8d6ec4a7e27bac2021a de22e2a8fe1885185950e1076e65be57318e1ec0 Mona <mona.vonhein@web.de> 1652262563 +0200	rebase: Corrected stuff so it's able to be opened on mobile again. Don't ask me what happened
+de22e2a8fe1885185950e1076e65be57318e1ec0 e135c6d54e3de8345052076f4e8071d0d40f3cca Mona <mona.vonhein@web.de> 1652262641 +0200	rebase: Database connected to LoginPW Screen
+e135c6d54e3de8345052076f4e8071d0d40f3cca f80ff2e858737fc57a890a64a0515ef32b35192a Mona <mona.vonhein@web.de> 1652262654 +0200	rebase: All DB-Methods we need implemented
+f80ff2e858737fc57a890a64a0515ef32b35192a f80ff2e858737fc57a890a64a0515ef32b35192a Mona <mona.vonhein@web.de> 1652262654 +0200	rebase finished: returning to refs/heads/database
+f80ff2e858737fc57a890a64a0515ef32b35192a 32a736f6308993ce31319a7e9f0a8f2f4e601990 Mona <mona.vonhein@web.de> 1652262684 +0200	commit (amend): All DB-Methods we need implemented
+32a736f6308993ce31319a7e9f0a8f2f4e601990 32a736f6308993ce31319a7e9f0a8f2f4e601990 Mona <mona.vonhein@web.de> 1652270903 +0200	reset: moving to HEAD
+32a736f6308993ce31319a7e9f0a8f2f4e601990 200b9b799ae0cd360a759a26ae7eb1ae61a42f7c Mona <mona.vonhein@web.de> 1652271493 +0200	commit: Fixed the fucking rebase problem. My god.
+200b9b799ae0cd360a759a26ae7eb1ae61a42f7c acd8e8b01baf638da1b44ede9a812dd49fbf93b6 Mona <mona.vonhein@web.de> 1652271621 +0200	commit (merge): Merge remote-tracking branch 'origin/database' into database
+acd8e8b01baf638da1b44ede9a812dd49fbf93b6 2a221cb68693c92dc6453d0b5349ecdf2665e841 Mona <mona.vonhein@web.de> 1652344659 +0200	checkout: moving from database to dev
+2a221cb68693c92dc6453d0b5349ecdf2665e841 acd8e8b01baf638da1b44ede9a812dd49fbf93b6 Mona <mona.vonhein@web.de> 1652345176 +0200	checkout: moving from dev to database
+acd8e8b01baf638da1b44ede9a812dd49fbf93b6 70e7f4a4a221b62138f663df23f4014fcc27f6a3 Mona <mona.vonhein@web.de> 1652370106 +0200	commit: EntryScreen Base is ready

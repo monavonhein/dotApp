@@ -1,0 +1,33 @@
+Merge branch 'database' of https://github.com/josiela/PeriodTracker into database
+
+# Conflicts:
+#	.expo/packager-info.json
+#	App.js
+#	components/Input.js
+#	package.json
+#	screens/ChangePWScreen.js
+#	screens/ChoosePwScreen.js
+#	yarn.lock
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please run
+#	git update-ref -d MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch database
+# Your branch and 'origin/database' have diverged,
+# and have 18 and 5 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   App.js
+#	modified:   components/Input.js
+#	modified:   package.json
+#	modified:   yarn.lock
+#

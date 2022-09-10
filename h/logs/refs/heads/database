@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 4fddfa6b6c0f48301192929762e14de3fadb34dc Mona <mona.vonhein@web.de> 1650894256 +0200	Branch: database created @ 4fddfa6b6c0f48301192929762e14de3fadb34dc
+4fddfa6b6c0f48301192929762e14de3fadb34dc 1a1461b350d417ff02b9fded2c39dc10ca0ad5ff Mona <mona.vonhein@web.de> 1651058631 +0200	commit: Database connected to LoginPW Screen
+1a1461b350d417ff02b9fded2c39dc10ca0ad5ff 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1651666329 +0200	commit: All DB-Methods we need implemented
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 2183f29d846fef972818f8109331fe082dfb07ec Mona <mona.vonhein@web.de> 1652190055 +0200	rebase (continue) (finish): refs/heads/database onto 2a221cb68693c92dc6453d0b5349ecdf2665e841
+2183f29d846fef972818f8109331fe082dfb07ec 4e5e0e8dbf520fba2f71fe85cec9c012529013f4 Mona <mona.vonhein@web.de> 1652190300 +0200	commit (merge): Merge branch 'database' of https://github.com/josiela/PeriodTracker into database
+4e5e0e8dbf520fba2f71fe85cec9c012529013f4 6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 Mona <mona.vonhein@web.de> 1652191306 +0200	reset: moving to origin/database
+6bf15a0bca9d2f3d7c56a01667f0e5d8cf69e1f8 f80ff2e858737fc57a890a64a0515ef32b35192a Mona <mona.vonhein@web.de> 1652262654 +0200	rebase finished: refs/heads/database onto 2a221cb68693c92dc6453d0b5349ecdf2665e841
+f80ff2e858737fc57a890a64a0515ef32b35192a 32a736f6308993ce31319a7e9f0a8f2f4e601990 Mona <mona.vonhein@web.de> 1652262684 +0200	commit (amend): All DB-Methods we need implemented
+32a736f6308993ce31319a7e9f0a8f2f4e601990 200b9b799ae0cd360a759a26ae7eb1ae61a42f7c Mona <mona.vonhein@web.de> 1652271493 +0200	commit: Fixed the fucking rebase problem. My god.
+200b9b799ae0cd360a759a26ae7eb1ae61a42f7c acd8e8b01baf638da1b44ede9a812dd49fbf93b6 Mona <mona.vonhein@web.de> 1652271621 +0200	commit (merge): Merge remote-tracking branch 'origin/database' into database
+acd8e8b01baf638da1b44ede9a812dd49fbf93b6 70e7f4a4a221b62138f663df23f4014fcc27f6a3 Mona <mona.vonhein@web.de> 1652370106 +0200	commit: EntryScreen Base is ready
