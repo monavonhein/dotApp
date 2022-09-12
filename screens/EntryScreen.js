@@ -593,11 +593,20 @@ const flaechenAusgewaehlt=()=>{
            
                
                 <DropDownPicker
+                dropDownDirection="TOP"
+                
               containerProps={{
-                width:"30 %",
+                width:"30%",
+                marginTop:"35%",
+                height:"140%",
+                 
                
               }}
                 placeholder="from..."
+                listMode="SCROLLVIEW"
+                style={styles.dropDownStyle}
+                zIndexInverse={7000}
+                zIndex={1000}
                 open={open}
                 value={value2}
                 items={items}
@@ -632,13 +641,20 @@ const flaechenAusgewaehlt=()=>{
               >{outcome}
               </Text> 
               <DropDownPicker
+              
+              dropDownDirection="TOP"
                 containerProps={{
-                  zIndex:20,
+                  
                   width:"30%",
                   marginTop:"30%",
                   height:"140%",
                  
                 }}
+           
+              listMode="SCROLLVIEW"
+              style={styles.dropDownStyle}
+              zIndexInverse={7000}
+              zIndex={1000}
                   placeholder="...to"
                   open={open2}
                   value={value3}
@@ -764,7 +780,7 @@ const styles = StyleSheet.create({
   },
   smallContainer:{
     position: "relative",
-    zIndex:20,
+
     //backgroundColor:colors.accBlue,
     alignItems:"center",
     justifyContent: "flex-start",
@@ -773,8 +789,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   }, 
   smallContainerNr2:{
-    
-   // for IOS: zIndex:3,
+    //zIndex:30,
     alignItems:"center",
     justifyContent: "flex-start",
     height:"15%",
@@ -782,8 +797,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   }, 
   littleContainer:{
-    
-   // backgroundColor:colors.accOrange,
+   
     alignItems:"flex-end",
     justifyContent: "flex-start",
     height:"7%",
@@ -808,12 +822,10 @@ const styles = StyleSheet.create({
   textStyle:{
     marginLeft:"5%",
     marginRight:"1%",
-    alignItems: "flex-end",
-    justifyContent:"center",
     height: "40%",
     width: "60%",
     textAlign: "right",
-    padding:8,
+    paddingRight:"5%",
     fontSize: normalizeH(10),
   },text: {
     marginLeft:"10%",
