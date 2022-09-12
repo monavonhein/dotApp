@@ -19,6 +19,7 @@ import {
   TextInput,
   
 } from "react-native";
+import {normalizeH} from "../constants/fontResponsive";
 import colors from "../constants/colors";
 import {  normalizeText } from "react-native-elements/dist/helpers";
 
@@ -28,7 +29,14 @@ import {  normalizeText } from "react-native-elements/dist/helpers";
 
 const EntryScreen = (props) => {
 
-  
+  const [outcome, setOutcome] = useState(0);
+  const [keyboardThing, setKeyboardThing]= useState("numeric");
+  const [open, setOpen] = useState(false);
+  const [number, setNumber] = useState(0);
+  const [open2, setOpen2] = useState(false);
+  const [value2, setValue2] = useState(null);
+  const [value3, setValue3] = useState(null);
+
   //confirms that a number was entered, else it throws an insult
 const binaryToDecimal=(input )=>{
 
@@ -41,13 +49,13 @@ const binaryToDecimal=(input )=>{
           break;
         case 'dezimal':
         let myDez = parseInt(input, 2);
-        console.log(myDez2);
+        
         setOutcome(myDez);
         break;
         case 'hexadezimal':
           let myDez2 = parseInt(input, 2).toString(16);
           setOutcome(myDez2);
-          console.log(outcome);
+        
           break;
 
         }
@@ -96,13 +104,11 @@ const binaryToDecimal=(input )=>{
 const doStraightMath=(input)=>{
 
 
-console.log("Do Straight!"+input);
   switch(value2){
     case 'nm':
       x=0.000001;
       break;
     case 'mm':
-      console.log("mm");
       x=1;
       break;
     case 'cm':
@@ -128,7 +134,6 @@ console.log("Do Straight!"+input);
   }
   switch(value3){
     case 'nm':
-      console.log("nm");
       y=0.1;
       break;
     case 'mm':
@@ -156,9 +161,7 @@ console.log("Do Straight!"+input);
       y= 1609344;
   }
   const outcomeHere= (x*input)/y;
-  console.log(outcomeHere);
   setOutcome(outcomeHere);
-  console.log("Outcome="+outcome);
 };
 
 const doQuadraticMath=(input)=>{
@@ -218,7 +221,6 @@ const doCubicMath=(input)=>{
     case 'nm^3':
       p=1;
       c=-27;
-      console.log(input);
       x=1/(1e27);
       break;
     case 'mm^3':
@@ -434,7 +436,7 @@ let y=0;
 const fahrenheit= 273.15;
 
   const doMathThing= (input)=>{
-    console.log("doMath!");
+    
     let x=0;
     let y=0;
     setNumber(input);
@@ -458,19 +460,12 @@ const fahrenheit= 273.15;
       binaryToDecimal(input);
 
     }
-    if((value2!='binär') &&(value2!='hexadezimal') &&(value2!='dezimal')){
+    else if((value2!='binär') &&(value2!='hexadezimal') &&(value2!='dezimal')){
+   
       setOutcome(Math.round(outcome * 1000000000) / 1000000000);
     }
 
   }
-  
-  const [outcome, setOutcome] = useState(0);
-  const [keyboardThing, setKeyboardThing]= useState("numeric");
-  const [open, setOpen] = useState(false);
-  const [number, setNumber] = useState(0);
-  const [open2, setOpen2] = useState(false);
-  const [value2, setValue2] = useState(null);
-  const [value3, setValue3] = useState(null);
 
   const [items, setItems] = useState([
     {label: 'Nanometer', value: 'nm'},
@@ -595,7 +590,7 @@ const flaechenAusgewaehlt=()=>{
 
   <View style={styles.container2}>
     <View style={styles.smallContainerNr2}> 
-            
+           
                
                 <DropDownPicker
               containerProps={{
@@ -614,10 +609,12 @@ const flaechenAusgewaehlt=()=>{
                 }}
                
               />  
+
+
               <TextInput style={styles.textInputStyle} 
               placeholder="Tap here"
               keyboardType={keyboardThing}
-              placeholderTextColor={colors.mainLG}
+              placeholderTextColor={colors.green}
               onChangeText={(value) => {
                 doMathThing(value);
               }}
@@ -632,11 +629,11 @@ const flaechenAusgewaehlt=()=>{
               placeholder="Result"
               keyboardType="email-adress"
               placeholderTextColor={colors.mainBlk}
-              >{randomZahl}
+              >{outcome}
               </Text> 
               <DropDownPicker
                 containerProps={{
-                  zIndex:300,
+                  zIndex:20,
                   width:"30%",
                   marginTop:"30%",
                   height:"140%",
@@ -735,6 +732,8 @@ const styles = StyleSheet.create({
     },
     
     container3: {
+    
+
     backgroundColor: colors.green,
     flexDirection: 'column',
     alignContent: 'flex-start',
@@ -743,6 +742,7 @@ const styles = StyleSheet.create({
     marginBottom:"20%",
    
   },container2: {
+    
     alignItems:"center",
     flexDirection: 'column',
     height: "90%",
@@ -750,18 +750,22 @@ const styles = StyleSheet.create({
     
   },
   knobview:{
-    zIndex:1,
-    marginTop:"10%",
+    
+    //backgroundColor: colors.mainBlk,
+    marginTop:"0%",
     flexDirection:"row",
     width:"100%",
     height:"50%",
   },
   littleknobview:{
+    
   width:"50%",
   height:"95%",
   },
   smallContainer:{
- zIndex:200,
+    position: "relative",
+    zIndex:20,
+    //backgroundColor:colors.accBlue,
     alignItems:"center",
     justifyContent: "flex-start",
     height:"15%",
@@ -769,6 +773,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   }, 
   smallContainerNr2:{
+    
    // for IOS: zIndex:3,
     alignItems:"center",
     justifyContent: "flex-start",
@@ -777,26 +782,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   }, 
   littleContainer:{
-    zIndex:-200,
+    
+   // backgroundColor:colors.accOrange,
     alignItems:"flex-end",
     justifyContent: "flex-start",
     height:"7%",
     width:"100%",
     flexDirection: 'column',
   }, 
-  smallContainer2:{
 
-    backgroundColor: colors.accBlue,
-    height:"40%",
-    flexDirection: 'row',
-  }, 
-  smallContainer3:{
-    backgroundColor: colors.accBlue,
-    marginTop:"20%",
-    height:"30%",
-    width:"100%",
-    flexDirection: 'row',
-  },
   textInputStyle:{
     
     marginLeft:"6%",
@@ -806,10 +800,10 @@ const styles = StyleSheet.create({
     height: "40%",
     padding: 10,
     width: "60%",
-    backgroundColor:colors.green,
+   // backgroundColor:colors.green,
     borderBottomWidth: 1,
-    textAlign: "right",
-    fontSize: normalizeText(23),
+    textAlign: "left",
+    fontSize: normalizeH(9),
   },
   textStyle:{
     marginLeft:"5%",
@@ -820,17 +814,17 @@ const styles = StyleSheet.create({
     width: "60%",
     textAlign: "right",
     padding:8,
-    fontSize: normalizeText(23),
+    fontSize: normalizeH(10),
   },text: {
     marginLeft:"10%",
     marginTop:"9%",
     color: colors.mainLG,
-    fontSize: normalizeText(50),
-    lineHeight: normalizeText(55),
+    fontSize: normalizeH(20),
+    lineHeight: normalizeH(25),
     letterSpacing: 0.25,
   },
   button:{
-    fontSize: normalizeText(10),
+    fontSize: normalizeH(5),
     alignSelf: "center",
     marginTop:"7%",
       width: "70%",
@@ -843,7 +837,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    fontSize: normalizeText(10),
+    fontSize: normalizeH(5),
     alignItems: "center",
     justifyContent: "center",
     
@@ -855,12 +849,12 @@ const styles = StyleSheet.create({
   },buttontext:{
     borderRadius: 10,
     color: 'white',
-    fontSize: normalizeText(17),
+    fontSize: normalizeH(7),
     fontWeight: 'bold',
   },
   touchableStyle2:{
-    
-    fontSize: normalizeText(10),
+
+    fontSize: normalizeH(7),
     alignItems: "center",
     justifyContent: "center",
     marginRight:"7.5%",
@@ -868,7 +862,7 @@ const styles = StyleSheet.create({
       height:"50%",
       backgroundColor: colors.green,
   },
-  
+ 
   
 
 
